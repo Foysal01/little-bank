@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Order</title>
+    <!-- TailWind Linked -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <main class="grid grid-cols-2 gap-12 mt-12">
+        <!-- Image  -->
+        <section>
+            <img class="w-96 mx-auto" src="images/mac.png" alt="">
+        </section>
+
+        <!-- Detail Price  -->
+        <section>
+            <h1 class="text-4xl font-semibold mb-2">
+                Customize your Blue 24-inch<br>iMac with Apple M1 chip.
+            </h1>
+            <p class="font-extralight mb-6">
+                Apple M1 chip with 8-core CPU with 4 perfomance cores and 4 efficiency<br>cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB<br>SSD storage Two Thunderbolt/USB 4 ports Magic Mouse Magic Keyboard-<br>US English
+            </p>
+
+            <!-- Memory  -->
+            <h5 class="font-semibold mb-2">Memory</h5>
+            <button class="hover:bg-gray-400 hover:text-white border border-gray-900 mr-2 p-2 rounded focus:ring-2 focus:ring-gray-500 ">8GB unified memory</button>
+            <button id="memory-button" class="hover:bg-gray-400 hover:text-white border border-gray-900 ml-2 p-2 rounded focus:ring-2 focus:ring-gray-500 ">16GB unified memory</button>
+
+            <!-- Storage  -->
+            <h5 class="font-semibold my-2">Storage</h5>
+            <button class="hover:bg-gray-400 hover:text-white border border-gray-900 mr-2 p-2 rounded focus:ring-2 focus:ring-gray-500 ">256GB SSD storage</button>
+            <button class="hover:bg-gray-400 hover:text-white border border-gray-900 mx-2 p-2 rounded focus:ring-2 focus:ring-gray-500 ">512GB SSD storage</button>
+            <button class="hover:bg-gray-400 hover:text-white border border-gray-900 ml-2 p-2 rounded focus:ring-2 focus:ring-gray-500 ">1TB SSD storage</button>
+
+            <!-- Delivery option  -->
+            <h5 class="font-semibold my-2">Choose your delivery option</h5>
+            <button class="hover:bg-gray-400 hover:text-white border border-gray-900 mr-2 p-2 rounded focus:ring-2 focus:ring-gray-500 ">Friday, Aug 25 FREE Prime Delivery</button>
+            <button class="hover:bg-gray-400 hover:text-white border border-gray-900 ml-2 p-2 rounded focus:ring-2 focus:ring-gray-500 ">Friday, Aug 21 Delivery Charge $20</button>
+
+            <!-- Money Calculation -->
+
+            <div>
+                <div class="grid grid-cols-2 font-semibold my-4">
+                    <h5>Best Price</h5>
+                    <h5>$1299</h5>
+                </div>
+                <div class="grid grid-cols-2 font-semibold my-4">
+                    <h5>Extra Memory Cost</h5>
+                    <h5>$<span class="memory-cost">0</span></h5>
+                </div>
+                <div class="grid grid-cols-2 font-semibold my-4">
+                    <h5>Extra Storage Cost</h5>
+                    <h5>$0</h5>
+                </div>
+                <div class="grid grid-cols-2 font-semibold my-4">
+                    <h5>Delivery Charge</h5>
+                    <h5>$0</h5>
+                </div>
+                <div class="grid grid-cols-2 font-semibold my-4">
+                    <h5>Total Price</h5>
+                    <h5>$1299</h5>
+                </div>
+            </div>
+
+            <div class=" font-semibold my-4">
+                <h5>Add Promo Code</h5> <br>
+                <input class="border-2 border-gray-400 hover\:border-gray-900 rounded" type="text" name="">
+                <button class="bg-red-600 text-white border  ml-2 py-2 px-4 rounded">Apply</button>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer  -->
+    <footer>
+        <h1 class="font-semibold text-3xl text-center mt-4">Total: $1299</h1>
+    </footer>
+</body>
+
+</html>
